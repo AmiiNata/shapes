@@ -31,8 +31,8 @@ public class Point {
 	//la methode translate 
 		public void translate(double dx, double dy) {
 			
-			this.x = this.x+dx;
-			this.y = this.y+dy;
+			x+=dx;
+			y+=dy;
 			
 		}
 		

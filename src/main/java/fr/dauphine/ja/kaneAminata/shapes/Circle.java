@@ -18,13 +18,13 @@ public class Circle extends Point{
 		return (super.toString()+"rayon =" + this.getRayon() + " la surface est de " + this.surface());
 	}
 	
-	
+/*
 	//la methode translate deja dans Point 
 			public void translate(double dx, double dy) {
 				
 				centre.translate(dx, dy);
 			}
-	
+	*/
 	public double getCenter() {
 		return this.rayon;
 	}
@@ -42,16 +42,9 @@ public class Circle extends Point{
 	
 	public static void main( String[] args ) {
 		
-		Point p=new Point(1,2);
-		Circle c=new Circle(p,1);
-		Circle c2=new Circle(p,2);
-		c2.translate(1,1);
-		
-		System.out.println(c+ " " +c2);
-		
-		
-		
-		
+		Circle c=new Circle(new Point(1,2), 1);
+		c.translate(1,2); // fais appelle à la fct de translate de point 
+		System.out.println(c);
 		
 	}
 
